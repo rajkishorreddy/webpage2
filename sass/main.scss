@@ -32,12 +32,8 @@ body {
 .header {
   padding: 1rem;
   margin-top: 0.5rem;
-  display: flex;
-  align-items: center;
-  color: #ddd;
-  justify-content: space-between;
+  color: white;
   height: 10vh;
-  //   background-color: lightcoral;
   &-user {
     display: flex;
     align-items: center;
@@ -61,25 +57,37 @@ body {
       }
     }
   }
-  &-settings {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-self: flex-end;
-  }
   &-logo {
     background: #000;
     border: 1px solid #ddd;
     margin-left: 2rem;
     padding: 1rem 1.5rem 1rem 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
   &-nav {
+    position: absolute;
+    right: 10rem;
+    top: 1rem;
+    display: flex;
+    @media only screen and (max-width: 56.25em) {
+      margin-left: 23rem;
+      flex-wrap: wrap;
+    }
+    @media only screen and (max-width: 36.5em) {
+      align-items: center;
+      justify-content: space-between;
+    }
     &-item {
       text-decoration: none;
       color: #ddd;
       font-size: 1.5rem;
       font-weight: 500;
       padding: 1rem 2rem 1rem 2rem;
+      @media only screen and (max-width: 36.5em) {
+        padding: 0.5rem;
+      }
       &-1 {
         //we have to use js to make nav item change color when clicked but for temperory i use here
         color: rgb(235, 235, 27);

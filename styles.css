@@ -28,10 +28,7 @@ body {
 .header {
   padding: 1rem;
   margin-top: 0.5rem;
-  display: flex;
-  align-items: center;
-  color: #ddd;
-  justify-content: space-between;
+  color: white;
   height: 10vh; }
   .header-user {
     display: flex;
@@ -49,26 +46,40 @@ body {
       font-size: 1.7rem;
       font-weight: 700;
       margin-left: 1rem; }
-  .header-settings {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-self: flex-end; }
   .header-logo {
     background: #000;
     border: 1px solid #ddd;
     margin-left: 2rem;
-    padding: 1rem 1.5rem 1rem 1.5rem; }
-  .header-nav-item {
-    text-decoration: none;
-    color: #ddd;
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 1rem 2rem 1rem 2rem; }
-    .header-nav-item-1 {
-      color: #ebeb1b; }
-    .header-nav-item-5 {
-      margin-left: 2rem; }
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .header-nav {
+    position: absolute;
+    right: 10rem;
+    top: 1rem;
+    display: flex; }
+    @media only screen and (max-width: 56.25em) {
+      .header-nav {
+        margin-left: 23rem;
+        flex-wrap: wrap; } }
+    @media only screen and (max-width: 36.5em) {
+      .header-nav {
+        align-items: center;
+        justify-content: space-between; } }
+    .header-nav-item {
+      text-decoration: none;
+      color: #ddd;
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 1rem 2rem 1rem 2rem; }
+      @media only screen and (max-width: 36.5em) {
+        .header-nav-item {
+          padding: 0.5rem; } }
+      .header-nav-item-1 {
+        color: #ebeb1b; }
+      .header-nav-item-5 {
+        margin-left: 2rem; }
 
 .body {
   color: #ddd;
