@@ -42,6 +42,9 @@ body {
     display: flex;
     align-items: center;
     margin-left: 1.8rem;
+    @media only screen and (max-width: 26em) {
+      margin: 0;
+    }
     &-logo {
       height: 5rem;
       width: 5rem;
@@ -58,6 +61,18 @@ body {
       }
     }
   }
+  &-settings {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: flex-end;
+  }
+  &-logo {
+    background: #000;
+    border: 1px solid #ddd;
+    margin-left: 2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
   &-nav {
     &-item {
       text-decoration: none;
@@ -73,12 +88,6 @@ body {
         margin-left: 2rem;
       }
     }
-    &-logo {
-      background: #000;
-      border: 1px solid #ddd;
-      margin-left: 2rem;
-      padding: 1rem 1.5rem 1rem 1.5rem;
-    }
   }
 }
 .body {
@@ -87,12 +96,23 @@ body {
   height: 89vh;
   //   background-color: aqua;
   display: flex;
+  @media only screen and (max-width: 26em) {
+    flex-direction: column;
+  }
   .cases {
     background-color: #333;
     width: 20%;
     margin: 1rem;
     border: 1px solid #ccc;
-
+    @media only screen and (max-width: 36.5em) {
+      width: 25%;
+    }
+    @media only screen and (max-width: 56em) {
+      width: 30%;
+    }
+    @media only screen and (max-width: 26em) {
+      width: 100%;
+    }
     &-title {
       display: flex;
       align-items: center;
@@ -100,6 +120,7 @@ body {
       padding-left: 25%;
       margin: 0 2rem 0 2rem;
       border-bottom: 2px solid rgba(0, 0, 0, 0.322);
+
       &-img {
         height: 3rem;
         width: 3rem;
@@ -138,6 +159,15 @@ body {
     width: 20%;
     margin: 1rem;
     border: 1px solid #ccc;
+    @media only screen and (max-width: 36.5em) {
+      width: 25%;
+    }
+    @media only screen and (max-width: 56em) {
+      width: 30%;
+    }
+    @media only screen and (max-width: 26em) {
+      width: 100%;
+    }
   }
   .percent {
     &-cont {

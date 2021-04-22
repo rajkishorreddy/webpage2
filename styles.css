@@ -37,6 +37,9 @@ body {
     display: flex;
     align-items: center;
     margin-left: 1.8rem; }
+    @media only screen and (max-width: 26em) {
+      .header-user {
+        margin: 0; } }
     .header-user-logo {
       height: 5rem;
       width: 5rem; }
@@ -46,6 +49,16 @@ body {
       font-size: 2rem;
       font-weight: 700;
       margin-left: 1rem; }
+  .header-settings {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: flex-end; }
+  .header-logo {
+    background: #000;
+    border: 1px solid #ddd;
+    margin-left: 2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem; }
   .header-nav-item {
     text-decoration: none;
     color: #ddd;
@@ -56,22 +69,29 @@ body {
       color: #ebeb1b; }
     .header-nav-item-5 {
       margin-left: 2rem; }
-  .header-nav-logo {
-    background: #000;
-    border: 1px solid #ddd;
-    margin-left: 2rem;
-    padding: 1rem 1.5rem 1rem 1.5rem; }
 
 .body {
   color: #ddd;
   font-size: 1.5rem;
   height: 89vh;
   display: flex; }
+  @media only screen and (max-width: 26em) {
+    .body {
+      flex-direction: column; } }
   .body .cases {
     background-color: #333;
     width: 20%;
     margin: 1rem;
     border: 1px solid #ccc; }
+    @media only screen and (max-width: 36.5em) {
+      .body .cases {
+        width: 25%; } }
+    @media only screen and (max-width: 56em) {
+      .body .cases {
+        width: 30%; } }
+    @media only screen and (max-width: 26em) {
+      .body .cases {
+        width: 100%; } }
     .body .cases-title {
       display: flex;
       align-items: center;
@@ -108,6 +128,15 @@ body {
     width: 20%;
     margin: 1rem;
     border: 1px solid #ccc; }
+    @media only screen and (max-width: 36.5em) {
+      .body .tasks {
+        width: 25%; } }
+    @media only screen and (max-width: 56em) {
+      .body .tasks {
+        width: 30%; } }
+    @media only screen and (max-width: 26em) {
+      .body .tasks {
+        width: 100%; } }
   .body .percent-cont {
     display: flex;
     align-items: center; }
