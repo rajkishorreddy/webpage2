@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header will be fixed in all three pages -->
+    <header class="header">
+      <div class="header-user">
+        <img src="img/user.png" alt="user" class="header-user-logo" />
+        <div class="header-user-info">
+          <span class="header-user-info-admin">ADMINISTRATOR</span>
+          <span class="header-user-info-username">USERNAME</span>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <a href="#" class="header-nav-item header-nav-item-1">HOMEPAGE</a>
+        <a href="#" class="header-nav-item header-nav-item-2">DASHBOARD</a>
+        <a href="#" class="header-nav-item header-nav-item-3">CASES</a>
+        <a href="#" class="header-nav-item header-nav-item-4">ALERTS</a>
+        <a href="#" class="header-nav-item header-nav-item-5">SEARCH</a>
+        <a href="#" class="header-nav-item header-nav-item-6">REPORT</a>
+        <a href="#" class="header-nav-item header-nav-logo">logo Here</a>
+      </nav>
+    </header>
+    <!-- THIS IS THE BODY PART -->
+    <main class="body">
+      <div class="cases">
+        <div class="cases-title">
+          <img src="img/file.png" class="cases-title-img" />
+          <div class="cases-title-name">MY CASES</div>
+        </div>
+        <div class="cases-item">
+          <img src="img/sad.png" class="cases-item-img" />
+          <div class="cases-item-info">
+            <span class="cases-item-info-name">Failed Login</span>
+            <span class="cases-item-info-date">2021-01-01 ID-3413</span>
+          </div>
+        </div>
+        <div class="cases-item">
+          <img src="img/mail.png" class="cases-item-img" />
+          <div class="cases-item-info">
+            <span class="cases-item-info-name">Suspecious Phishing E-mail</span>
+            <span class="cases-item-info-date">2021-01-01 ID-3413</span>
+          </div>
+        </div>
+        <div class="cases-item">
+          <img src="img/sad.png" class="cases-item-img" />
+          <div class="cases-item-info">
+            <span class="cases-item-info-name">Failed Login</span>
+            <span class="cases-item-info-date">2021-01-01 ID-3413</span>
+          </div>
+        </div>
+      </div>
+      <!-- FOR THE CLASSES I DIDN'T CHANGE THE CLASS NAMES AND WRITTEN SAME AS ABOVE CASES CLASS (TO APPLY THE SAME CSS PROPERTIES) -->
+      <div class="tasks">
+        <div class="cases-title">
+          <img src="img/file.png" class="cases-title-img" />
+          <div class="cases-title-name">MY TASKS</div>
+        </div>
+        <div class="cases-item">
+          <img src="img/sad.png" class="cases-item-img" />
+          <div class="cases-item-info">
+            <span class="cases-item-info-name">Failed Login</span>
+            <span class="cases-item-info-date">2021-01-01 ID-3413</span>
+          </div>
+        </div>
+      </div>
+      <div class="percent">
+        <div class="percent-cont">
+          <div class="percent-indi">0%</div>
+          <div class="percent-info">out of 0 Closed cases in the last Week</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

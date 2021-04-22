@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 36.5em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 90%; } }
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background: #0e0700;
+  font-family: "Roboto", sans-serif; }
+
+.header {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: #ddd;
+  justify-content: space-between;
+  height: 10vh; }
+  .header-user {
+    display: flex;
+    align-items: center;
+    margin-left: 1.8rem; }
+    .header-user-logo {
+      height: 5rem;
+      width: 5rem; }
+    .header-user-info {
+      display: flex;
+      flex-direction: column;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-left: 1rem; }
+  .header-nav-item {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem 2rem 1rem 2rem; }
+    .header-nav-item-1 {
+      color: #ebeb1b; }
+    .header-nav-item-5 {
+      margin-left: 2rem; }
+  .header-nav-logo {
+    background: #000;
+    border: 1px solid #ddd;
+    margin-left: 2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem; }
+
+.body {
+  color: #ddd;
+  font-size: 1.5rem;
+  height: 89vh;
+  display: flex; }
+  .body .cases {
+    background-color: #333;
+    width: 20%;
+    margin: 1rem;
+    border: 1px solid #ccc; }
+    .body .cases-title {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      padding-left: 25%;
+      margin: 0 2rem 0 2rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.322); }
+      .body .cases-title-img {
+        height: 3rem;
+        width: 3rem; }
+      .body .cases-title-name {
+        margin-left: 1rem;
+        font-weight: 500;
+        color: white; }
+    .body .cases-item {
+      display: flex;
+      align-items: center;
+      padding: 1rem; }
+      .body .cases-item-img {
+        height: 3rem;
+        width: 3rem; }
+      .body .cases-item-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem; }
+        .body .cases-item-info-name {
+          font-size: 1.4rem;
+          padding-bottom: 0.5rem; }
+        .body .cases-item-info-date {
+          font-size: 1.4rem;
+          padding-top: 0.5rem; }
+  .body .tasks {
+    background-color: #333;
+    width: 20%;
+    margin: 1rem;
+    border: 1px solid #ccc; }
+  .body .percent-cont {
+    display: flex;
+    align-items: center; }
+  .body .percent-indi {
+    padding: 2rem;
+    background-color: #000;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    border: 1px solid white; }
+  .body .percent-info {
+    padding: 1rem; }
