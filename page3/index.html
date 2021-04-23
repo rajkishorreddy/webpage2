@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header will be fixed in all three pages -->
+    <header class="header">
+      <div class="header-user">
+        <img src="img/user.png" alt="user" class="header-user-logo" />
+        <div class="header-user-info">
+          <span class="header-user-info-admin">ADMINISTRATOR</span>
+          <span class="header-user-info-username">USERNAME</span>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="#" class="header-nav-item header-nav-item-1">HOMEPAGE</a>
+        <a href="#" class="header-nav-item header-nav-item-3">CASES</a>
+        <a href="#" class="header-nav-item header-nav-item-2">DASHBOARD</a>
+
+        <a href="#" class="header-nav-item header-nav-item-4">ALERTS</a>
+        <a href="#" class="header-nav-item header-nav-item-5">SEARCH</a>
+        <a href="#" class="header-nav-item header-nav-item-6">REPORT</a>
+      </nav>
+      <div class="header-logo">logo Here</div>
+    </header>
+    <!-- THIS IS THE BODY PART -->
+    <main class="case-container">
+      <div class="case-container-header">
+        <nav class="case-container-nav">
+          <a href="#" class="case-container-nav-item case-container-nav-item-1"
+            >Case Details
+          </a>
+          <a href="#" class="case-container-nav-item case-container-nav-item-2"
+            >Task</a
+          >
+          <a href="#" class="case-container-nav-item case-container-nav-item-3"
+            >Artifact</a
+          >
+          <a href="#" class="case-container-nav-item case-container-nav-item-4"
+            >Notes</a
+          >
+          <a href="#" class="case-container-nav-item case-container-nav-item-5"
+            >Stats</a
+          >
+        </nav>
+      </div>
+      <div class="case-details">
+        <div class="case-details-header">Basic information</div>
+        <div class="case-details-info">
+          <div class="case-details-info-name">Name</div>
+          <div class="case-details-info-Description">Description</div>
+          <div class="case-details-info-type">Incident Type</div>
+          <div class="case-details-info-phase">Phase</div>
+          <div class="case-details-info-created">Created By</div>
+          <div class="case-details-info-owner">Owner by</div>
+          <div class="case-details-info-date">Date Occured</div>
+          <div class="case-details-info-severity">Severity</div>
+          <div class="case-details-info-tags">Tags</div>
+        </div>
+        <div class="related-cases">
+          <div class="related-cases-header">Related cases</div>
+          <div class="related-cases-name">
+            <div class="related-cases-name-header">Case Name:</div>
+            <div class="related-cases-description">
+              <div class="related-cases-description-item">Created on</div>
+              <div class="related-cases-description-item">Shared</div>
+              <div class="related-cases-description-item">Tags</div>
+            </div>
+          </div>
+          <div class="related-cases-name">
+            <div class="related-cases-name-header">Case Name:</div>
+            <div class="related-cases-description">
+              <div class="related-cases-description-item">Created on</div>
+              <div class="related-cases-description-item">Shared</div>
+              <div class="related-cases-description-item">Tags</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

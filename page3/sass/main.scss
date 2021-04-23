@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //   border: 1px solid red;
+}
+html {
+  font-size: 62.5%;
+  @media only screen and (max-width: 75em) {
+    font-size: 56.25%;
+  }
+  //below 900px
+  @media only screen and (max-width: 56.25em) {
+    font-size: 50%;
+  }
+  //below 600px
+  @media only screen and (max-width: 36.5em) {
+    font-size: 45%;
+  }
+  //above 1800px
+  @media only screen and (min-width: 112.5em) {
+    font-size: 90%;
+  }
+}
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background: #0e0700;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  color: white;
+  height: 10vh;
+  &-user {
+    display: flex;
+    align-items: center;
+    margin-left: 1.8rem;
+    @media only screen and (max-width: 26em) {
+      margin: 0;
+    }
+    &-logo {
+      height: 5rem;
+      width: 5rem;
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-left: 1rem;
+      &-admin {
+      }
+      &-username {
+      }
+    }
+  }
+  &-logo {
+    background: #000;
+    border: 1px solid #ddd;
+    margin-left: 2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  &-nav {
+    position: absolute;
+    right: 10rem;
+    top: 1rem;
+    display: flex;
+    @media only screen and (max-width: 56.25em) {
+      margin-left: 23rem;
+      flex-wrap: wrap;
+    }
+    @media only screen and (max-width: 36.5em) {
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-item {
+      text-decoration: none;
+      color: #ddd;
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 1rem 2rem 1rem 2rem;
+      @media only screen and (max-width: 36.5em) {
+        padding: 0.5rem;
+      }
+      &-3 {
+        //we have to use js to make nav item change color when clicked but for temperory i use here
+        color: rgb(235, 235, 27);
+      }
+      &-5 {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+.case-container {
+  background-color: #333;
+  height: 89vh;
+  border: 1px solid #ccc;
+  margin: 0 1rem;
+  &-header {
+    border-bottom: 1px solid white;
+  }
+  &-nav {
+    padding: 0.6rem 0;
+    &-item {
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: white;
+      margin: 0 3rem;
+      &-1 {
+        color: rgb(235, 235, 27);
+      }
+      &:hover {
+        color: rgb(235, 235, 27);
+      }
+    }
+  }
+}
+.case-details {
+  margin: 2rem;
+  position: relative;
+  &-header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #ddd;
+  }
+  &-info {
+    margin: 2rem 1rem 0 1rem;
+    color: white;
+    font-size: 1.5rem;
+    * {
+      padding: 1rem;
+    }
+  }
+  .related-cases {
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 7rem;
+    background: #ccc;
+    width: 25%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    // outline: 2px solid black;
+    // outline-offset: 5px;
+    @media only screen and (max-width: 36.5em) {
+      position: static;
+      width: 100%;
+    }
+    &-header {
+      font-weight: 500;
+    }
+    &-name {
+      margin: 1rem 0 1rem 2rem;
+      &-header {
+        font-weight: 500;
+      }
+    }
+    &-description {
+      margin: 0.5rem 3rem;
+    }
+  }
+}

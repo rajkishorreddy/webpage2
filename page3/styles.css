@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 36.5em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 90%; } }
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background: #0e0700;
+  font-family: "Roboto", sans-serif; }
+
+.header {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  color: white;
+  height: 10vh; }
+  .header-user {
+    display: flex;
+    align-items: center;
+    margin-left: 1.8rem; }
+    @media only screen and (max-width: 26em) {
+      .header-user {
+        margin: 0; } }
+    .header-user-logo {
+      height: 5rem;
+      width: 5rem; }
+    .header-user-info {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-left: 1rem; }
+  .header-logo {
+    background: #000;
+    border: 1px solid #ddd;
+    margin-left: 2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .header-nav {
+    position: absolute;
+    right: 10rem;
+    top: 1rem;
+    display: flex; }
+    @media only screen and (max-width: 56.25em) {
+      .header-nav {
+        margin-left: 23rem;
+        flex-wrap: wrap; } }
+    @media only screen and (max-width: 36.5em) {
+      .header-nav {
+        align-items: center;
+        justify-content: space-between; } }
+    .header-nav-item {
+      text-decoration: none;
+      color: #ddd;
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 1rem 2rem 1rem 2rem; }
+      @media only screen and (max-width: 36.5em) {
+        .header-nav-item {
+          padding: 0.5rem; } }
+      .header-nav-item-3 {
+        color: #ebeb1b; }
+      .header-nav-item-5 {
+        margin-left: 2rem; }
+
+.case-container {
+  background-color: #333;
+  height: 89vh;
+  border: 1px solid #ccc;
+  margin: 0 1rem; }
+  .case-container-header {
+    border-bottom: 1px solid white; }
+  .case-container-nav {
+    padding: 0.6rem 0; }
+    .case-container-nav-item {
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: white;
+      margin: 0 3rem; }
+      .case-container-nav-item-1 {
+        color: #ebeb1b; }
+      .case-container-nav-item:hover {
+        color: #ebeb1b; }
+
+.case-details {
+  margin: 2rem;
+  position: relative; }
+  .case-details-header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #ddd; }
+  .case-details-info {
+    margin: 2rem 1rem 0 1rem;
+    color: white;
+    font-size: 1.5rem; }
+    .case-details-info * {
+      padding: 1rem; }
+  .case-details .related-cases {
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 7rem;
+    background: #ccc;
+    width: 25%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1.5rem; }
+    @media only screen and (max-width: 36.5em) {
+      .case-details .related-cases {
+        position: static;
+        width: 100%; } }
+    .case-details .related-cases-header {
+      font-weight: 500; }
+    .case-details .related-cases-name {
+      margin: 1rem 0 1rem 2rem; }
+      .case-details .related-cases-name-header {
+        font-weight: 500; }
+    .case-details .related-cases-description {
+      margin: 0.5rem 3rem; }
